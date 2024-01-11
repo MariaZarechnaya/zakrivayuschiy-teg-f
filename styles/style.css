@@ -48,7 +48,7 @@
   background-color: var(--bg-color);
   font-family: var(--font-accent), monospace;
   text-align: center;
-  height: clamp(20.188rem, 3.661vw + 19.455rem, 22.75rem);
+  /* height: clamp(20.188rem, 3.661vw + 19.455rem, 22.75rem); */
   text-transform: uppercase;
   padding: clamp(7.5rem, 1.502vw + 7.148rem, 8.5rem) 0 0 0;
   margin-bottom: 98px;
@@ -79,6 +79,8 @@
 }
 .theme-menu__button {
   color: var(--txt-color);
+  text-transform: uppercase;
+  transition: opacity 0.3s ease;
 }
 .theme-menu__button:disabled {
   pointer-events: none;
@@ -95,10 +97,6 @@
 .theme-menu__button:focus-visible,
 .theme-menu__button:hover  {
   opacity: 0.6;
-}
-.theme-menu__button {
-  text-transform: uppercase;
-  transition: opacity 0.3s ease;
 }
 .theme-menu__button:focus {
   outline: none;

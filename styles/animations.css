@@ -27,21 +27,22 @@
   }
 }
 .like-icon.is-liked .heart {
-  animation: heart 0.3s 0.1s ease-in-out;
+  animation: heart 0.3s 0.1s ease-in;
+  transform-origin: center;
 }
 @keyframes heart {
   0% {
     transform: scale(1);
   }
   50% {
-    transform: scale(1.15);
+    transform: scale(1.5);
   }
   100% {
     transform: scale(1);
   }
 }
 .like-icon.is-liked .sparks {
-  animation: sparks 0.3s 0.3s ease-in;
+  animation: sparks 0.3s 0.23s ease-in;
 }
 @keyframes sparks {
   0% {

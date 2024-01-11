@@ -5,8 +5,6 @@
 ✦ не забудьте описать стили для изменения темы через медизапрос пользовательских предпочтений
 */
 :root.theme-dark {
-  --font-main: "Inter";
-  --font-accent: "Press Start 2P";
   --txt-color: rgba(0, 204, 20, 1);
   --bg-color: rgba(0, 0, 0, 1);
   --border: 2px solid var(--txt-color);
@@ -21,8 +19,6 @@
   --font-weight-txt: 465;
 }
 :root.theme-light {
-  --font-main: "Inter";
-  --font-accent: "Press Start 2P";
   --txt-color: black;
   --bg-color: white;
   --border: 2px solid var(--txt-color);
@@ -38,8 +34,6 @@
 }
 @media (prefers-color-scheme: dark) {
   :root {
-    --font-main: "Inter";
-    --font-accent: "Press Start 2P";
     --txt-color: rgba(0, 204, 20, 1);
     --bg-color: rgba(0, 0, 0, 1);
     --border: 2px solid var(--txt-color);

@@ -4,3 +4,53 @@
 ✦ theme-light — класс светлой темы
 ✦ не забудьте описать стили для изменения темы через медизапрос пользовательских предпочтений
 */
+:root.theme-dark {
+  --font-main: "Inter";
+  --font-accent: "Press Start 2P";
+  --txt-color: rgba(0, 204, 20, 1);
+  --bg-color: rgba(0, 0, 0, 1);
+  --border: 2px solid var(--txt-color);
+  --heart-border: rgba(0, 204, 20, 1);
+  --heart-animation: red;
+  --button-text: rgba(0, 204, 20, 1);
+  --fill: rgba(0, 204, 20, 1);
+  --gradient-dots: #000;
+  --gradient: #007f0c, #004306;
+  --txt-shadow: rgb(0, 0, 0);
+  --font-weight-title: 785;
+  --font-weight-txt: 465;
+}
+:root.theme-light {
+  --font-main: "Inter";
+  --font-accent: "Press Start 2P";
+  --txt-color: black;
+  --bg-color: white;
+  --border: 2px solid var(--txt-color);
+  --heart-border: black;
+  --heart-animation: red;
+  --button-text: white;
+  --fill: white;
+  --gradient-dots: #d3d3d3;
+  --gradient: #e7e7e7, #1a1a1a;
+  --txt-shadow: white;
+  --font-weight-title: 700;
+  --font-weight-txt: 400;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --font-main: "Inter";
+    --font-accent: "Press Start 2P";
+    --txt-color: rgba(0, 204, 20, 1);
+    --bg-color: rgba(0, 0, 0, 1);
+    --border: 2px solid var(--txt-color);
+    --heart-border: rgba(0, 204, 20, 1);
+    --heart-animation: red;
+    --button-text: rgba(0, 204, 20, 1);
+    --fill: rgba(0, 204, 20, 1);
+    --gradient-dots: #000;
+    --gradient: #007f0c, #004306;
+    --txt-shadow: rgb(0, 0, 0);
+    --font-weight-title: 785;
+    --font-weight-txt: 465;
+  }
+}

@@ -24,6 +24,7 @@ ol,
 li {
   margin: 0;
   padding: 0;
+  font-size: inherit;
 }
 
 a {
@@ -32,9 +33,15 @@ a {
 
 button,
 input {
-  color: currentColor;
+  /* color: currentColor; */
   font-family: inherit;
   font-size: inherit;
+  background: none;
+  border: none;
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+  outline: none;
 }
 
 ul,

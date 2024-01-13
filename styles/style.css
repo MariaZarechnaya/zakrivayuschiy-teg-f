@@ -32,6 +32,7 @@
   font-family: var(--font-main), sans-serif;
   color: var(--txt-color);
   font-variation-settings: "wght" var(--font-weight-txt);
+  background-attachment: fixed;
 }
 .wrapper {
   max-inline-size: 700px;
@@ -147,7 +148,7 @@
   filter: hue-rotate(21deg) saturate(205%) contrast(65%);
 }
 .card__img_cat {
-  filter: sepia(60%);
+  filter: grayscale(0.8);
 }
 .card__img_way {
   filter: brightness(84%) saturate(144%);
@@ -182,9 +183,8 @@
   width: 100%;
   max-height: 696px;
   object-fit: cover;
-}
-.card__img-wrapper .card__img:nth-child(3) {
-  filter: grayscale(0.8);
+  border-top: var(--border);
+  border-bottom: var(--border);
 }
 .text-wrapper {
   display: flex;
@@ -199,7 +199,6 @@
 .card__button-wrapper {
   display: flex;
   justify-content: end;
-  padding: 0 25px 25px;
 }
 .card__like-button {
   inline-size: 130px;
